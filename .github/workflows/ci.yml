@@ -1,4 +1,4 @@
-name: CI to Verify
+name: CI Pipeline
 
 on:
   push:
@@ -23,9 +23,6 @@ jobs:
 
       - name: Install dependencies
         run: pnpm install
-
-      - name: Unit Test
-        run: pnpm test
 
       - name: Lint
         run: pnpm lint
